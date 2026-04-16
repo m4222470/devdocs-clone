@@ -944,10 +944,38 @@ button {
   border-radius: var(--radius-lg);
   margin-bottom: var(--space-6);
   overflow: hidden;
+  position: relative;
 }
 
 [data-theme="dark"] .page-preview {
   background-color: var(--neutral-800);
+}
+
+.page-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform var(--transition-base);
+}
+
+.page-card:hover .page-preview img {
+  transform: scale(1.05);
+}
+
+.preview-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 32px;
+  background: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, transparent 100%);
+  display: flex;
+  align-items: center;
+  padding: 0 var(--space-3);
+}
+
+[data-theme="dark"] .preview-overlay {
+  background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, transparent 100%);
 }
 
 .preview-header {
