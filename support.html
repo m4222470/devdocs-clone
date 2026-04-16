@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Support - Devdocs X Documentation Template">
+    <meta name="robots" content="index, follow">
+    <title>Support - Devdocs X</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M8 12H24M8 16H18M8 20H22M8 24H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Devdocs X</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="docs.html" class="nav-link">Docs</a>
+                    <a href="help-center.html" class="nav-link">Help Center</a>
+                    <a href="changelog.html" class="nav-link">Changelog</a>
+                    <a href="support.html" class="nav-link active">Support</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 11.5C16.5 9.5 14 8 11.5 8C8 8 5 11 5 14.5C5 16 5.5 17.5 6.5 18.5C7.5 19.5 9 20 10.5 20C14.5 20 17.5 16.5 17.5 12.5C17.5 12 17.5 11.5 17.5 11.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="docs.html" class="mobile-nav-link">Docs</a>
+            <a href="help-center.html" class="mobile-nav-link">Help Center</a>
+            <a href="changelog.html" class="mobile-nav-link">Changelog</a>
+            <a href="support.html" class="mobile-nav-link active">Support</a>
+        </nav>
+    </div>
+
+    <section class="support-hero">
+        <div class="container">
+            <h1 class="support-title">Get in Touch</h1>
+            <p class="support-description">
+                Have a question or need help? We're here for you. Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+        </div>
+    </section>
+
+    <section class="support-content">
+        <div class="container">
+            <div class="support-grid">
+                <div class="support-form-container">
+                    <h2 class="form-title">Send us a message</h2>
+                    <form class="support-form" id="supportForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="technical">Technical Support</option>
+                                <option value="billing">Billing Question</option>
+                                <option value="feedback">Feature Request</option>
+                                <option value="bug">Bug Report</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" placeholder="Tell us how we can help you..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-lg btn-full">
+                            Send Message
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M3 10L17 10M12 5L17 10L12 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+
+                <aside class="support-info">
+                    <div class="info-card">
+                        <h3 class="info-title">Other Ways to Reach Us</h3>
+                        
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M3 8L10.89 13.36C11.2187 13.5853 11.6049 13.7136 12 13.7136C12.3951 13.7136 12.7813 13.5853 13.11 13.36L21 8M5 19H19C19.5304 19 20.0391 18.7893 20.4142 18.4142C20.7893 18.0391 21 17.5304 21 17V7C21 6.46957 20.7893 5.96086 20.4142 5.58579C20.0391 5.21071 19.5304 5 19 5H5C4.46957 5 3.96086 5.21071 3.58579 5.58579C3.21071 5.96086 3 6.46957 3 7V17C3 17.5304 3.21071 18.0391 3.58579 18.4142C3.96086 18.7893 4.46957 19 5 19Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email</h4>
+                                <p>support@devdocs.example.com</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 13.8214 2.48819 15.5291 3.33717 17M12 22C6.47715 22 2 17.5228 2 12C2 9.18443 3.19797 6.73514 5.05369 5M12 22C14.7614 22 17.1915 20.802 19.0463 19M12 2V5M12 2C9.18443 2 6.73514 3.19797 5.05369 5M12 2C14.2386 2 16.3998 2.8584 18 4.34315M12 5V2M5 9V12M12 12V9M19 9V12M9 12H15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Live Chat</h4>
+                                <p>Available Monday - Friday<br>9:00 AM - 6:00 PM EST</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item">
+                            <div class="info-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                    <path d="M21 11.5C21 16.1944 16.9706 20 12 20C10.7626 20 9.59378 19.7631 8.52187 19.3329C7.71168 19.007 6.89075 19.2535 6.32938 19.8149L4.86675 21.2775C3.26225 20.6109 1.88581 19.2345 1.21924 17.63L2.68187 16.1674C3.24325 15.606 3.4898 14.7851 3.16387 13.9749C2.73361 12.9029 2.49674 11.7341 2.49674 10.4967C2.49674 5.02944 6.80556 0.496742 12 0.496742C17.1944 0.496742 21.5033 5.02944 21.5033 10.4967V11.5H21Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </div>
+                            <div class="info-content">
+                                <h4>Community Forum</h4>
+                                <p>Join our community<br>for discussions and help</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="info-card">
+                        <h3 class="info-title">Response Time</h3>
+                        <p class="response-text">
+                            We typically respond within <strong>24 hours</strong> during business days. For urgent issues, please use our live chat option.
+                        </p>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-mini">
+        <div class="container">
+            <h2 class="section-title">Before You Contact Us</h2>
+            <p class="section-description">
+                Check these common resources for quick answers
+            </p>
+            
+            <div class="faq-links">
+                <a href="docs.html" class="faq-link-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Documentation</h3>
+                    <p>Browse our guides and API reference</p>
+                </a>
+                
+                <a href="help-center.html" class="faq-link-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                        <path d="M9.09 9C9.3251 8.33167 9.78915 7.76811 10.4 7.40912C11.0108 7.05014 11.7289 6.91894 12.4272 7.03871C13.1255 7.15849 13.7588 7.52252 14.2151 8.06353C14.6713 8.60454 14.9211 9.29152 14.92 10C14.92 12 11.92 13 11.92 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M12 17H12.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Help Center</h3>
+                    <p>Find answers to common questions</p>
+                </a>
+                
+                <a href="changelog.html" class="faq-link-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M16 13H8M16 17H8M10 9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    <h3>Changelog</h3>
+                    <p>See recent updates and fixes</p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Devdocs X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Devdocs X Documentation - API Reference and Guides">
+    <meta name="robots" content="index, follow">
+    <title>Documentation - Devdocs X</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M8 12H24M8 16H18M8 20H22M8 24H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Devdocs X</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="docs.html" class="nav-link active">Docs</a>
+                    <a href="help-center.html" class="nav-link">Help Center</a>
+                    <a href="changelog.html" class="nav-link">Changelog</a>
+                    <a href="support.html" class="nav-link">Support</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 11.5C16.5 9.5 14 8 11.5 8C8 8 5 11 5 14.5C5 16 5.5 17.5 6.5 18.5C7.5 19.5 9 20 10.5 20C14.5 20 17.5 16.5 17.5 12.5C17.5 12 17.5 11.5 17.5 11.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="docs.html" class="mobile-nav-link active">Docs</a>
+            <a href="help-center.html" class="mobile-nav-link">Help Center</a>
+            <a href="changelog.html" class="mobile-nav-link">Changelog</a>
+            <a href="support.html" class="mobile-nav-link">Support</a>
+        </nav>
+    </div>
+
+    <div class="docs-layout">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Getting Started</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#introduction" class="sidebar-link active">Introduction</a></li>
+                    <li><a href="#installation" class="sidebar-link">Installation</a></li>
+                    <li><a href="#quick-start" class="sidebar-link">Quick Start</a></li>
+                    <li><a href="#configuration" class="sidebar-link">Configuration</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">API Reference</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#authentication" class="sidebar-link">Authentication</a></li>
+                    <li><a href="#endpoints" class="sidebar-link">Endpoints</a></li>
+                    <li><a href="#requests" class="sidebar-link">Requests</a></li>
+                    <li><a href="#responses" class="sidebar-link">Responses</a></li>
+                    <li><a href="#errors" class="sidebar-link">Error Codes</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Guides</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#integration" class="sidebar-link">Integration</a></li>
+                    <li><a href="#best-practices" class="sidebar-link">Best Practices</a></li>
+                    <li><a href="#troubleshooting" class="sidebar-link">Troubleshooting</a></li>
+                    <li><a href="#examples" class="sidebar-link">Examples</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Resources</h3>
+                <ul class="sidebar-list">
+                    <li><a href="#sdk" class="sidebar-link">SDKs</a></li>
+                    <li><a href="#libraries" class="sidebar-link">Libraries</a></li>
+                    <li><a href="#changelog" class="sidebar-link">Changelog</a></li>
+                    <li><a href="#support" class="sidebar-link">Support</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content" id="main-content">
+            <section class="doc-section" id="introduction">
+                <h1 class="doc-title">Introduction</h1>
+                <p class="doc-lead">
+                    Welcome to Devdocs X, a comprehensive documentation template designed for developers and technical teams. This guide will help you get started quickly.
+                </p>
+                
+                <div class="doc-alert doc-alert-info">
+                    <strong>Note:</strong> This is a placeholder documentation page. Replace the content with your actual API documentation.
+                </div>
+                
+                <h2>What is Devdocs X?</h2>
+                <p>
+                    Devdocs X is a modern, responsive documentation template that helps you create beautiful and organized technical documentation. It's built with pure HTML, CSS, and JavaScript with no external dependencies.
+                </p>
+                
+                <h3>Key Features</h3>
+                <ul>
+                    <li><strong>Clean Code:</strong> No frameworks or external libraries required</li>
+                    <li><strong>Responsive Design:</strong> Works perfectly on all devices</li>
+                    <li><strong>Dark Mode:</strong> Built-in dark theme support</li>
+                    <li><strong>Search:</strong> Full-text search functionality</li>
+                    <li><strong>SEO Optimized:</strong> Built with SEO best practices</li>
+                </ul>
+            </section>
+
+            <section class="doc-section" id="installation">
+                <h1 class="doc-title">Installation</h1>
+                
+                <h2>Prerequisites</h2>
+                <p>Before you begin, make sure you have:</p>
+                <ul>
+                    <li>A modern web browser (Chrome, Firefox, Safari, Edge)</li>
+                    <li>Basic understanding of HTML and CSS</li>
+                    <li>A code editor (VS Code recommended)</li>
+                </ul>
+                
+                <h2>Quick Installation</h2>
+                <p>Clone the repository to your local machine:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">bash</span>
+                        <button class="copy-btn" aria-label="Copy code">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                <rect x="4" y="4" width="10" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/>
+                                <path d="M2 12V3C2 2.44772 2.44772 2 3 2H11" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <pre><code>git clone https://github.com/m4222470/devdocs-clone.git
+cd devdocs-clone
+open index.html</code></pre>
+                </div>
+                
+                <h2>Project Structure</h2>
+                <p>Here's the structure of the project:</p>
+                
+                <div class="code-block">
+                    <pre><code>devdocs-clone/
+├── index.html          # Main landing page
+├── docs.html          # Documentation page
+├── css/
+│   └── styles.css     # Main stylesheet
+├── js/
+│   └── main.js        # JavaScript functionality
+└── images/            # Image assets</code></pre>
+                </div>
+            </section>
+
+            <section class="doc-section" id="authentication">
+                <h1 class="doc-title">Authentication</h1>
+                
+                <p>
+                    Our API uses API keys to authenticate requests. You can view and manage your API keys in your dashboard.
+                </p>
+                
+                <div class="doc-alert doc-alert-warning">
+                    <strong>Important:</strong> Keep your API key secure! Do not share it in public repositories or client-side code.
+                </div>
+                
+                <h2>Getting Your API Key</h2>
+                <p>To obtain an API key:</p>
+                <ol>
+                    <li>Sign up for an account</li>
+                    <li>Navigate to Settings → API Keys</li>
+                    <li>Click "Generate New Key"</li>
+                    <li>Copy your key securely</li>
+                </ol>
+                
+                <h2>Using Your API Key</h2>
+                <p>Include your API key in the request header:</p>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">http</span>
+                    </div>
+                    <pre><code>Authorization: Bearer YOUR_API_KEY</code></pre>
+                </div>
+                
+                <h2>Example Request</h2>
+                
+                <div class="code-block">
+                    <div class="code-header">
+                        <span class="code-language">javascript</span>
+                    </div>
+                    <pre><code>fetch('https://api.example.com/v1/users', {
+  method: 'GET',
+  headers: {
+    'Authorization': 'Bearer YOUR_API_KEY',
+    'Content-Type': 'application/json'
+  }
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error('Error:', error));</code></pre>
+                </div>
+            </section>
+
+            <section class="doc-section" id="endpoints">
+                <h1 class="doc-title">API Endpoints</h1>
+                
+                <p>
+                    Our REST API provides the following endpoints for managing your resources.
+                </p>
+                
+                <h2>Base URL</h2>
+                <p>All API requests should be made to:</p>
+                
+                <div class="code-block">
+                    <pre><code>https://api.example.com/v1</code></pre>
+                </div>
+                
+                <h2>Available Endpoints</h2>
+                
+                <div class="endpoint-table">
+                    <div class="endpoint-row">
+                        <span class="endpoint-method method-get">GET</span>
+                        <span class="endpoint-path">/users</span>
+                        <span class="endpoint-desc">List all users</span>
+                    </div>
+                    <div class="endpoint-row">
+                        <span class="endpoint-method method-post">POST</span>
+                        <span class="endpoint-path">/users</span>
+                        <span class="endpoint-desc">Create a new user</span>
+                    </div>
+                    <div class="endpoint-row">
+                        <span class="endpoint-method method-get">GET</span>
+                        <span class="endpoint-path">/users/:id</span>
+                        <span class="endpoint-desc">Get user by ID</span>
+                    </div>
+                    <div class="endpoint-row">
+                        <span class="endpoint-method method-put">PUT</span>
+                        <span class="endpoint-path">/users/:id</span>
+                        <span class="endpoint-desc">Update user</span>
+                    </div>
+                    <div class="endpoint-row">
+                        <span class="endpoint-method method-delete">DELETE</span>
+                        <span class="endpoint-path">/users/:id</span>
+                        <span class="endpoint-desc">Delete user</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="doc-section" id="errors">
+                <h1 class="doc-title">Error Codes</h1>
+                
+                <p>
+                    Our API uses standard HTTP status codes to indicate success or failure of requests.
+                </p>
+                
+                <h2>HTTP Status Codes</h2>
+                
+                <div class="error-codes">
+                    <div class="error-code">
+                        <span class="error-status status-200">200</span>
+                        <div class="error-info">
+                            <h4>OK</h4>
+                            <p>Request succeeded</p>
+                        </div>
+                    </div>
+                    
+                    <div class="error-code">
+                        <span class="error-status status-201">201</span>
+                        <div class="error-info">
+                            <h4>Created</h4>
+                            <p>Resource created successfully</p>
+                        </div>
+                    </div>
+                    
+                    <div class="error-code">
+                        <span class="error-status status-400">400</span>
+                        <div class="error-info">
+                            <h4>Bad Request</h4>
+                            <p>Invalid request parameters</p>
+                        </div>
+                    </div>
+                    
+                    <div class="error-code">
+                        <span class="error-status status-401">401</span>
+                        <div class="error-info">
+                            <h4>Unauthorized</h4>
+                            <p>Invalid or missing API key</p>
+                        </div>
+                    </div>
+                    
+                    <div class="error-code">
+                        <span class="error-status status-404">404</span>
+                        <div class="error-info">
+                            <h4>Not Found</h4>
+                            <p>Resource does not exist</p>
+                        </div>
+                    </div>
+                    
+                    <div class="error-code">
+                        <span class="error-status status-500">500</span>
+                        <div class="error-info">
+                            <h4>Internal Server Error</h4>
+                            <p>Something went wrong on our end</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <aside class="docs-toc">
+            <div class="toc-header">
+                <h3>On this page</h3>
+            </div>
+            <nav class="toc-nav">
+                <a href="#introduction" class="toc-link">Introduction</a>
+                <a href="#installation" class="toc-link">Installation</a>
+                <a href="#authentication" class="toc-link">Authentication</a>
+                <a href="#endpoints" class="toc-link">API Endpoints</a>
+                <a href="#errors" class="toc-link">Error Codes</a>
+            </nav>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Devdocs X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Help Center - Devdocs X Documentation Template">
+    <meta name="robots" content="index, follow">
+    <title>Help Center - Devdocs X</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M8 12H24M8 16H18M8 20H22M8 24H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Devdocs X</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    <a href="docs.html" class="nav-link">Docs</a>
+                    <a href="help-center.html" class="nav-link active">Help Center</a>
+                    <a href="changelog.html" class="nav-link">Changelog</a>
+                    <a href="support.html" class="nav-link">Support</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 11.5C16.5 9.5 14 8 11.5 8C8 8 5 11 5 14.5C5 16 5.5 17.5 6.5 18.5C7.5 19.5 9 20 10.5 20C14.5 20 17.5 16.5 17.5 12.5C17.5 12 17.5 11.5 17.5 11.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">Home</a>
+            <a href="docs.html" class="mobile-nav-link">Docs</a>
+            <a href="help-center.html" class="mobile-nav-link active">Help Center</a>
+            <a href="changelog.html" class="mobile-nav-link">Changelog</a>
+            <a href="support.html" class="mobile-nav-link">Support</a>
+        </nav>
+    </div>
+
+    <section class="help-hero">
+        <div class="container">
+            <h1 class="help-title">How can we help you?</h1>
+            <p class="help-description">
+                Search our knowledge base or browse common questions below
+            </p>
+            <div class="help-search">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                    <circle cx="9" cy="9" r="6" stroke="currentColor" stroke-width="2"/>
+                    <path d="M13.5 13.5L17 17" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <input type="text" placeholder="Search for answers..." class="help-search-input">
+            </div>
+        </div>
+    </section>
+
+    <section class="help-categories">
+        <div class="container">
+            <h2 class="section-title">Browse by Category</h2>
+            
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L4 8V16C4 23.73 9.13 30.6 16 32C22.87 30.6 28 23.73 28 16V8L16 4Z" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 16L15 19L21 13" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Getting Started</h3>
+                    <p class="category-description">Quick start guides and basic setup instructions</p>
+                    <span class="category-count">8 articles</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 10V16L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Account & Billing</h3>
+                    <p class="category-description">Manage your account, subscriptions, and payments</p>
+                    <span class="category-count">12 articles</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16H22M10 12H22M10 20H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">API Integration</h3>
+                    <p class="category-description">Technical documentation and integration guides</p>
+                    <span class="category-count">15 articles</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 24L12 20L16 24L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Troubleshooting</h3>
+                    <p class="category-description">Solutions to common issues and error messages</p>
+                    <span class="category-count">10 articles</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M26 16C26 22.63 20.63 28 14 28C9.58 28 5.64 25.85 3.35 22.36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M6 16C6 10.48 10.48 6 16 6C18.21 6 20.21 6.75 21.75 8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M28 10V16C28 18.21 26.21 20 24 20H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Mobile App</h3>
+                    <p class="category-description">Help with our iOS and Android applications</p>
+                    <span class="category-count">7 articles</span>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4V12M16 20V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 12L12 16M20 16L24 12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 20L12 16M20 16L24 20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3 class="category-title">Features</h3>
+                    <p class="category-description">Learn about all available features and capabilities</p>
+                    <span class="category-count">9 articles</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I create an account?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Creating an account is easy! Simply click the "Sign Up" button on our homepage, enter your email address and create a password. You'll receive a confirmation email to verify your account.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What payment methods do you accept?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept all major credit cards (Visa, Mastercard, American Express), PayPal, and bank transfers for annual plans. All payments are processed securely through our payment partners.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How can I reset my password?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>To reset your password, go to the login page and click "Forgot Password". Enter your email address and we'll send you a link to create a new password. The link expires after 24 hours.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer a free trial?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! We offer a 14-day free trial for all new users. You get full access to all features during the trial period. No credit card required to start your trial.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I cancel my subscription?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>You can cancel your subscription at any time from your account settings. Go to Settings → Billing → Cancel Subscription. Your access will continue until the end of your current billing period.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I change my plan later?</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! You can upgrade or downgrade your plan at any time. When upgrading, you'll be charged the prorated difference. When downgrading, the new rate will apply at your next billing cycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-cta">
+        <div class="container">
+            <div class="cta-box">
+                <h2>Still need help?</h2>
+                <p>Can't find what you're looking for? Our support team is here to assist you.</p>
+                <a href="support.html" class="btn btn-primary btn-lg">
+                    Contact Support
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                        <path d="M7 5L12 10L7 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© 2026 Devdocs X. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
