@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="التوثيق V3 - Devdocs X">
+    <meta name="robots" content="index, follow">
+    <title>التوثيق V3 - Devdocs X</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M8 12H24M8 16H18M8 20H22M8 24H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Devdocs X</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="docs.html" class="nav-link active">التوثيق</a>
+                    <a href="help-center.html" class="nav-link">مركز المساعدة</a>
+                    <a href="changelog.html" class="nav-link">سجل التغييرات</a>
+                    <a href="support.html" class="nav-link">الدعم</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="تبديل المظهر">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 11.5C16.5 9.5 14 8 11.5 8C8 8 5 11 5 14.5C5 16 5.5 17.5 6.5 18.5C7.5 19.5 9 20 10.5 20C14.5 20 17.5 16.5 17.5 12.5C17.5 12 17.5 11.5 17.5 11.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="قائمة الهاتف">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+            <a href="docs.html" class="mobile-nav-link active">التوثيق</a>
+            <a href="help-center.html" class="mobile-nav-link">مركز المساعدة</a>
+            <a href="changelog.html" class="mobile-nav-link">سجل التغييرات</a>
+            <a href="support.html" class="mobile-nav-link">الدعم</a>
+        </nav>
+    </div>
+
+    <div class="docs-layout docs-layout-v3">
+        <aside class="docs-sidebar">
+            <div class="sidebar-header">
+                <h3>التوثيق</h3>
+                <select class="version-select">
+                    <option value="v2">v2.0</option>
+                    <option value="v1">v1.5</option>
+                </select>
+            </div>
+            
+            <div class="sidebar-section">
+                <h4 class="sidebar-category">البداية</h4>
+                <ul class="sidebar-list">
+                    <li><a href="docs.html" class="sidebar-link">المقدمة</a></li>
+                    <li><a href="docs-v1.html" class="sidebar-link">التثبيت</a></li>
+                    <li><a href="docs-v2.html" class="sidebar-link">البداية السريعة</a></li>
+                    <li><a href="docs-v3.html" class="sidebar-link active">الإعدادات</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-category">المصادر</h4>
+                <ul class="sidebar-list">
+                    <li><a href="docs-category.html" class="sidebar-link">الأمثلة</a></li>
+                    <li><a href="doc-single.html" class="sidebar-link">المرجع</a></li>
+                    <li><a href="changelog.html" class="sidebar-link">التحديثات</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content">
+            <div class="docs-breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>/</span>
+                <a href="docs.html">التوثيق</a>
+                <span>/</span>
+                <span>الإعدادات</span>
+            </div>
+
+            <article class="doc-article">
+                <header class="doc-header">
+                    <h1>إعدادات التكوين</h1>
+                    <p class="doc-lead">تعرف على كيفية تكوين Devdocs X حسب احتياجاتك.</p>
+                </header>
+
+                <section class="doc-section">
+                    <h2>ملف الإعدادات</h2>
+                    <p>يمكنك تخصيص الموقع من خلال ملف الإعدادات.</p>
+                    
+                    <div class="code-block">
+                        <pre><code>{
+  "site": {
+    "title": "My Documentation",
+    "description": "API Documentation",
+    "url": "https://docs.example.com"
+  },
+  "theme": {
+    "primaryColor": "#6366F1",
+    "darkMode": true
+  }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <h2>خيارات التخصيص</h2>
+                    <p>تتوفر خيارات تخصيص متعددة:</p>
+                    
+                    <div class="config-grid">
+                        <div class="config-item">
+                            <h4>الألوان</h4>
+                            <p>تخصيص نظام الألوان الرئيسي</p>
+                        </div>
+                        <div class="config-item">
+                            <h4>الخطوط</h4>
+                            <p>تغيير خطوط العرض</p>
+                        </div>
+                        <div class="config-item">
+                            <h4>التخطيط</h4>
+                            <p>تعديل تخطيط الصفحة</p>
+                        </div>
+                        <div class="config-item">
+                            <h4>المحتوى</h4>
+                            <p>إدارة صفحات التوثيق</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <h2>المتغيرات البيئية</h2>
+                    <p>يمكنك استخدام المتغيرات البيئية للإعدادات.</p>
+                    
+                    <div class="code-block">
+                        <pre><code>SITE_URL=https://docs.example.com
+SITE_TITLE=My Docs
+PRIMARY_COLOR=#6366F1
+ENABLE_SEARCH=true</code></pre>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <h2>الخطوات التالية</h2>
+                    <div class="next-steps">
+                        <a href="docs.html#authentication" class="next-step-card">
+                            <span class="step-number">١</span>
+                            <span class="step-text">تعلم المصادقة ←</span>
+                        </a>
+                        <a href="docs.html#endpoints" class="next-step-card">
+                            <span class="step-number">٢</span>
+                            <span class="step-text">استكشف نقاط النهاية ←</span>
+                        </a>
+                    </div>
+                </section>
+            </article>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© ٢٠٢٦ Devdocs X. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

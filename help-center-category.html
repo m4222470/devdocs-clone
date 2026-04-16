@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="تطبيق سطح المكتب - Devdocs X">
+    <meta name="robots" content="index, follow">
+    <title>تطبيق سطح المكتب - Devdocs X</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M8 12H24M8 16H18M8 20H22M8 24H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Devdocs X</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="docs.html" class="nav-link">التوثيق</a>
+                    <a href="help-center.html" class="nav-link active">مركز المساعدة</a>
+                    <a href="changelog.html" class="nav-link">سجل التغييرات</a>
+                    <a href="support.html" class="nav-link">الدعم</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="تبديل المظهر">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 11.5C16.5 9.5 14 8 11.5 8C8 8 5 11 5 14.5C5 16 5.5 17.5 6.5 18.5C7.5 19.5 9 20 10.5 20C14.5 20 17.5 16.5 17.5 12.5C17.5 12 17.5 11.5 17.5 11.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="قائمة الهاتف">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+            <a href="docs.html" class="mobile-nav-link">التوثيق</a>
+            <a href="help-center.html" class="mobile-nav-link active">مركز المساعدة</a>
+            <a href="changelog.html" class="mobile-nav-link">سجل التغييرات</a>
+            <a href="support.html" class="mobile-nav-link">الدعم</a>
+        </nav>
+    </div>
+
+    <section class="category-hero">
+        <div class="container">
+            <div class="category-badge">تطبيق سطح المكتب</div>
+            <h1>مقالات تطبيق سطح المكتب</h1>
+            <p>دليل شامل لاستخدام تطبيق سطح المكتب</p>
+        </div>
+    </section>
+
+    <section class="category-content">
+        <div class="container">
+            <div class="category-grid">
+                <a href="help-center-single.html" class="category-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L4 8V16C4 23.73 9.13 30.6 16 32C22.87 30.6 28 23.73 28 16V8L16 4Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>كيفية التثبيت على Mac</h3>
+                    <p>دليل خطوة بخطوة لتثبيت التطبيق على أجهزة Mac</p>
+                    <span class="card-meta">٥ دقائق للقراءة</span>
+                </a>
+
+                <a href="help-center-single.html" class="category-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <rect x="4" y="4" width="24" height="24" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 16H22M10 12H22M10 20H18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>التثبيت على Windows</h3>
+                    <p>كيفية تثبيت التطبيق على نظام Windows</p>
+                    <span class="card-meta">٥ دقائق للقراءة</span>
+                </a>
+
+                <a href="help-center-single.html" class="category-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 10V16L20 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>إعدادات التفضيلات</h3>
+                    <p>تخصيص إعدادات التطبيق حسب رغبتك</p>
+                    <span class="card-meta">١٠ دقائق للقراءة</span>
+                </a>
+
+                <a href="help-center-single.html" class="category-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M8 24L12 20L16 24L24 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <circle cx="24" cy="8" r="4" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>حل المشاكل الشائعة</h3>
+                    <p>حل المشاكل الأكثر شيوعاً في التطبيق</p>
+                    <span class="card-meta">١٥ دقيقة للقراءة</span>
+                </a>
+
+                <a href="help-center-single.html" class="category-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M14 2L4 7V25L14 30L24 25V7L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M14 12V22M14 12L10 16M14 12L18 16" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>التحديثات والترقيات</h3>
+                    <p>كيفية تحديث التطبيق إلى أحدث إصدار</p>
+                    <span class="card-meta">٥ دقائق للقراءة</span>
+                </a>
+
+                <a href="support.html" class="category-card">
+                    <div class="card-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 8V12L14 14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 20V24C24 25.1 23.1 26 22 26H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>الدعم الفني</h3>
+                    <p>تواصل مع فريق الدعم للحصول على مساعدة</p>
+                    <span class="card-meta">فوري</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="category-nav">
+        <div class="container">
+            <div class="nav-cards">
+                <a href="help-center.html" class="nav-card nav-prev">
+                    <span class="nav-label">السابق</span>
+                    <span class="nav-title">← مركز المساعدة</span>
+                </a>
+                <a href="support.html" class="nav-card nav-next">
+                    <span class="nav-label">التالي</span>
+                    <span class="nav-title">التواصل معنا →</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© ٢٠٢٦ Devdocs X. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

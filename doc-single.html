@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="إنشاء حساب - Devdocs X">
+    <meta name="robots" content="index, follow">
+    <title>إنشاء حساب - Devdocs X</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <rect width="32" height="32" rx="8" fill="#6366F1"/>
+                        <path d="M8 12H24M8 16H18M8 20H22M8 24H14" stroke="white" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                    <span>Devdocs X</span>
+                </a>
+                <nav class="nav">
+                    <a href="index.html" class="nav-link">الرئيسية</a>
+                    <a href="docs.html" class="nav-link active">التوثيق</a>
+                    <a href="help-center.html" class="nav-link">مركز المساعدة</a>
+                    <a href="changelog.html" class="nav-link">سجل التغييرات</a>
+                    <a href="support.html" class="nav-link">الدعم</a>
+                </nav>
+                <div class="header-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="تبديل المظهر">
+                        <svg class="sun-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <circle cx="10" cy="10" r="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M10 2V4M10 16V18M18 10H16M4 10H2M15.5 4.5L14 6M6 14L4.5 15.5M15.5 15.5L14 14M6 6L4.5 4.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                        <svg class="moon-icon" width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M17.5 11.5C16.5 9.5 14 8 11.5 8C8 8 5 11 5 14.5C5 16 5.5 17.5 6.5 18.5C7.5 19.5 9 20 10.5 20C14.5 20 17.5 16.5 17.5 12.5C17.5 12 17.5 11.5 17.5 11.5Z" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="قائمة الهاتف">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <nav class="mobile-nav-links">
+            <a href="index.html" class="mobile-nav-link">الرئيسية</a>
+            <a href="docs.html" class="mobile-nav-link active">التوثيق</a>
+            <a href="help-center.html" class="mobile-nav-link">مركز المساعدة</a>
+            <a href="changelog.html" class="mobile-nav-link">سجل التغييرات</a>
+            <a href="support.html" class="mobile-nav-link">الدعم</a>
+        </nav>
+    </div>
+
+    <div class="docs-layout">
+        <aside class="docs-sidebar">
+            <div class="sidebar-section">
+                <h4 class="sidebar-category">البدء</h4>
+                <ul class="sidebar-list">
+                    <li><a href="docs-category.html" class="sidebar-link">نظرة عامة</a></li>
+                    <li><a href="doc-single.html" class="sidebar-link active">إنشاء حساب</a></li>
+                    <li><a href="doc-single-snippets.html" class="sidebar-link">الأكواد القصيرة</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-section">
+                <h4 class="sidebar-category">المصادر</h4>
+                <ul class="sidebar-list">
+                    <li><a href="docs-v1.html" class="sidebar-link">التثبيت</a></li>
+                    <li><a href="docs-v2.html" class="sidebar-link">البداية السريعة</a></li>
+                    <li><a href="changelog.html" class="sidebar-link">التحديثات</a></li>
+                </ul>
+            </div>
+        </aside>
+
+        <main class="docs-content">
+            <div class="docs-breadcrumb">
+                <a href="index.html">الرئيسية</a>
+                <span>/</span>
+                <a href="docs.html">التوثيق</a>
+                <span>/</span>
+                <a href="docs-category.html">البدء</a>
+                <span>/</span>
+                <span>إنشاء حساب</span>
+            </div>
+
+            <article class="doc-article">
+                <header class="doc-header">
+                    <div class="doc-meta">
+                        <span class="meta-tag">البدء</span>
+                        <span class="meta-time">٥ دقائق للقراءة</span>
+                    </div>
+                    <h1>كيفية إنشاء حساب</h1>
+                    <p class="doc-lead">تعرف على كيفية إنشاء حساب جديد والبدء في استخدام Devdocs X.</p>
+                </header>
+
+                <section class="doc-section">
+                    <h2>المتطلبات الأساسية</h2>
+                    <p>قبل البدء، تأكد من توفر ما يلي:</p>
+                    <ul>
+                        <li>حساب بريد إلكتروني فعال</li>
+                        <li>اتصال بالإنترنت</li>
+                        <li>متصفح حديث (Chrome, Firefox, Safari, Edge)</li>
+                    </ul>
+                </section>
+
+                <section class="doc-section">
+                    <h2>الخطوة الأولى: التسجيل</h2>
+                    <p>لإنشاء حساب جديد، اتبع الخطوات التالية:</p>
+                    <ol class="steps-list">
+                        <li>
+                            <h3>زيارة صفحة التسجيل</h3>
+                            <p>افتح متصفحك وانتقل إلى صفحة التسجيل.</p>
+                        </li>
+                        <li>
+                            <h3>إدخال المعلومات</h3>
+                            <p>املأ النموذج بالمعلومات المطلوبة:</p>
+                            <div class="code-block">
+                                <pre><code>اسم المستخدم: yourname
+البريد الإلكتروني: you@example.com
+كلمة المرور: **********</code></pre>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>تأكيد البريد الإلكتروني</h3>
+                            <p>ستصلك رسالة تأكيد على بريدك الإلكتروني. انقر على الرابط الموجود في الرسالة.</p>
+                        </li>
+                    </ol>
+                </section>
+
+                <section class="doc-section">
+                    <h2>الخطوة الثانية: إعداد الحساب</h2>
+                    <p>بعد تأكيد حسابك، يمكنك إعداد ملفك الشخصي:</p>
+                    <div class="code-block">
+                        <pre><code>// إعدادات الحساب
+{
+  "name": "اسمك",
+  "email": "you@example.com",
+  "preferences": {
+    "theme": "dark",
+    "language": "ar"
+  }
+}</code></pre>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <h2>الخطوة الثالثة: البدء</h2>
+                    <p>مبروك! حسابك جاهز. يمكنك الآن:</p>
+                    <div class="feature-grid">
+                        <div class="feature-item">
+                            <h4>استكشاف التوثيق</h4>
+                            <p>تصفح صفحات التوثيق المختلفة</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>الحصول على الدعم</h4>
+                            <p>تواصل مع فريق الدعم</p>
+                        </div>
+                        <div class="feature-item">
+                            <h4>تخصيص الإعدادات</h4>
+                            <p>عدّل الإعدادات حسب رغبتك</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <div class="doc-tip">
+                        <h4>💡 نصيحة</h4>
+                        <p>احتفظ بكلمة مرورك في مكان آمن. يمكنك استخدام مدير كلمات المرور لحفظها بشكل آمن.</p>
+                    </div>
+                </section>
+
+                <section class="doc-section">
+                    <h2>المشاكل الشائعة</h2>
+                    <div class="faq-mini-list">
+                        <div class="faq-mini-item">
+                            <h4>لم يصلك بريد التأكيد؟</h4>
+                            <p>تحقق من مجلد البريد العشوائي أو أعد إرسال التأكيد.</p>
+                        </div>
+                        <div class="faq-mini-item">
+                            <h4>نسيت كلمة المرور؟</h4>
+                            <p>استخدم خيار "نسيت كلمة المرور" لإعادة تعيينها.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="doc-nav">
+                    <a href="docs-category.html" class="nav-prev">
+                        <span>→ السابق</span>
+                        <span class="nav-title">العودة للبدء</span>
+                    </a>
+                    <a href="doc-single-snippets.html" class="nav-next">
+                        <span>التالي ←</span>
+                        <span class="nav-title">أمثلة الأكواد</span>
+                    </a>
+                </div>
+            </article>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="copyright">© ٢٠٢٦ Devdocs X. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
