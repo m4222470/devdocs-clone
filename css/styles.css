@@ -110,19 +110,165 @@
   --header-height: 72px;
 }
 
-/* Dark Mode Variables */
-[data-theme="dark"] {
+/* Dark Mode Variables - ألوان الوضع المظلم المحسنة */
+:root[data-theme="dark"] {
   --neutral-0: #0F172A;
   --neutral-50: #1E293B;
-  --neutral-100: #334155;
-  --neutral-200: #475569;
-  --neutral-300: #64748B;
-  --neutral-400: #94A3B8;
-  --neutral-500: #CBD5E1;
-  --neutral-600: #E2E8F0;
-  --neutral-700: #F1F5F9;
-  --neutral-800: #F8FAFC;
+  --neutral-100: #1E293B;
+  --neutral-200: #334155;
+  --neutral-300: #475569;
+  --neutral-400: #64748B;
+  --neutral-500: #94A3B8;
+  --neutral-600: #CBD5E1;
+  --neutral-700: #E2E8F0;
+  --neutral-800: #F1F5F9;
   --neutral-900: #FFFFFF;
+  --neutral-950: #020617;
+}
+
+:root[data-theme="dark"] body {
+  background-color: #020617;
+  color: #F1F5F9;
+}
+
+:root[data-theme="dark"] .header {
+  background-color: rgba(15, 23, 42, 0.98);
+  border-bottom-color: #334155;
+}
+
+:root[data-theme="dark"] .logo {
+  color: #F8FAFC;
+}
+
+:root[data-theme="dark"] .mobile-nav {
+  background-color: #0F172A;
+}
+
+:root[data-theme="dark"] .mobile-nav-link {
+  color: #CBD5E1;
+  border-bottom-color: #334155;
+}
+
+:root[data-theme="dark"] .hero {
+  background: linear-gradient(135deg, #1E293B 0%, #0F172A 100%);
+}
+
+:root[data-theme="dark"] .hero-title {
+  color: #F8FAFC;
+}
+
+:root[data-theme="dark"] .hero-description {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .hero-badge {
+  background-color: #3730A3;
+  color: #C7D2FE;
+}
+
+:root[data-theme="dark"] .features {
+  background-color: #0F172A;
+}
+
+:root[data-theme="dark"] .section-title {
+  color: #F8FAFC;
+}
+
+:root[data-theme="dark"] .section-description {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .feature-card {
+  background-color: #1E293B;
+  border-color: #334155;
+}
+
+:root[data-theme="dark"] .feature-title {
+  color: #F1F5F9;
+}
+
+:root[data-theme="dark"] .feature-description {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .feature-icon {
+  background-color: #3730A3;
+  color: #A5B4FC;
+}
+
+:root[data-theme="dark"] .pages-showcase {
+  background: linear-gradient(180deg, #0F172A 0%, #1E293B 100%);
+}
+
+:root[data-theme="dark"] .page-card {
+  background-color: #1E293B;
+  border-color: #334155;
+}
+
+:root[data-theme="dark"] .page-name {
+  color: #F1F5F9;
+}
+
+:root[data-theme="dark"] .page-description {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .page-preview {
+  background-color: #334155;
+}
+
+:root[data-theme="dark"] .footer {
+  background-color: #0F172A;
+}
+
+:root[data-theme="dark"] .footer-brand .logo {
+  color: #FFFFFF;
+}
+
+:root[data-theme="dark"] .footer-description {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .footer-title {
+  color: #F8FAFC;
+}
+
+:root[data-theme="dark"] .footer-link {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .footer-link:hover {
+  color: #FFFFFF;
+}
+
+:root[data-theme="dark"] .copyright {
+  color: #64748B;
+}
+
+:root[data-theme="dark"] .social-link {
+  background-color: #334155;
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .social-link:hover {
+  background-color: #4F46E5;
+  color: #FFFFFF;
+}
+
+:root[data-theme="dark"] .stat-value {
+  color: #818CF8;
+}
+
+:root[data-theme="dark"] .stat-label {
+  color: #94A3B8;
+}
+
+:root[data-theme="dark"] .stat-divider {
+  background-color: #334155;
+}
+
+:root[data-theme="dark"] .cta {
+  background: linear-gradient(135deg, #3730A3 0%, #4338CA 100%);
 }
 
 /* ===== Reset & Base ===== */
@@ -148,6 +294,11 @@ body {
   color: var(--neutral-800);
   background-color: var(--neutral-50);
   transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+:root[data-theme="dark"] body {
+  background-color: var(--neutral-950);
+  color: var(--neutral-100);
 }
 
 a {
@@ -320,28 +471,89 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: var(--radius-lg);
-  background-color: var(--neutral-100);
-  transition: all var(--transition-fast);
+  width: 48px;
+  height: 48px;
+  border-radius: var(--radius-2xl);
+  background: linear-gradient(145deg, #f0f0f0 0%, #e0e0e0 100%);
+  border: 2px solid transparent;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  cursor: pointer;
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.05);
+}
+
+.theme-toggle::before {
+  content: '';
+  position: absolute;
+  inset: -3px;
+  border-radius: var(--radius-2xl);
+  background: linear-gradient(145deg, var(--primary-400), var(--primary-600));
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.3s ease;
 }
 
 .theme-toggle:hover {
-  background-color: var(--neutral-200);
-  transform: rotate(15deg);
+  transform: translateY(-3px) rotate(10deg);
+  box-shadow: 
+    0 8px 20px rgba(99, 102, 241, 0.25),
+    0 4px 10px rgba(0, 0, 0, 0.1),
+    inset 0 1px 0 rgba(255, 255, 255, 0.5);
+  border-color: var(--primary-400);
+}
+
+.theme-toggle:hover::before {
+  opacity: 0.15;
+}
+
+.theme-toggle:active {
+  transform: translateY(-1px) rotate(5deg);
+}
+
+.theme-toggle svg {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+}
+
+.theme-toggle:hover svg {
+  transform: rotate(20deg) scale(1.1);
 }
 
 .theme-toggle .moon-icon {
   display: none;
 }
 
-[data-theme="dark"] .theme-toggle .sun-icon {
+/* Dark mode styles for theme toggle */
+:root[data-theme="dark"] .theme-toggle {
+  background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+  box-shadow: 
+    0 2px 8px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+
+:root[data-theme="dark"] .theme-toggle:hover {
+  box-shadow: 
+    0 8px 25px rgba(99, 102, 241, 0.35),
+    0 4px 12px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  border-color: var(--primary-400);
+}
+
+:root[data-theme="dark"] .theme-toggle .sun-icon {
   display: none;
 }
 
-[data-theme="dark"] .theme-toggle .moon-icon {
+:root[data-theme="dark"] .theme-toggle .moon-icon {
   display: block;
+  color: #a5b4fc;
+}
+
+:root[data-theme="dark"] .theme-toggle:hover .moon-icon {
+  color: #818cf8;
 }
 
 .mobile-menu-toggle {
