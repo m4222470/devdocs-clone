@@ -1,0 +1,5 @@
+date	size'/'remotesize	flags(request:Update,Range state:File response:Modified,Chunked,gZipped)	statuscode	status ('servermsg')	MIME	Etag|Date	URL	localfile	(from URL)
+16:42:53	45/45	------	200	untouched ('OK')	text/plain	date:Fri,%2017%20Apr%202026%2007:41:22%20GMT	https://sentrixa-template.webflow.io/robots.txt		(from )
+16:42:53	122/122	------	502	error ('Bad%20Gateway')	text/html	date:Fri,%2017%20Apr%202026%2016:42:25%20GMT	https://sentrixa-template.webflow.io/	./sentrixa-template.webflow.io/index.html	(from )
+16:42:53	122/122	------	502	error ('Bad%20Gateway')	text/html	date:Fri,%2017%20Apr%202026%2016:42:25%20GMT	https://sentrixa-template.webflow.io/	./sentrixa-template.webflow.io/index.html	(from )
+16:42:53	122/122	------	502	error ('Bad%20Gateway')	text/html	date:Fri,%2017%20Apr%202026%2016:42:25%20GMT	https://sentrixa-template.webflow.io/	./sentrixa-template.webflow.io/index.html	(from )

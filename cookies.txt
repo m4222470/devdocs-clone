@@ -1,0 +1,5 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.webflow.io	TRUE	/	FALSE	1999999999	_cfuvid	OPJKaS0Bq0kcBjh2xAWwFud5Sr0J3fB0dHUpMakUPvE-1776444143558-0.0.1.1-604800000
+sentrixa-template.webflow.io	TRUE	/	FALSE	1999999999	SameSite	None
+
